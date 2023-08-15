@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .lato-font{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+<body class="lato-font">
+    <section>
+        <div class="hero min-h-screen flex justify-center items-center  bg-cover" style="background-image: url(image/online-banking-login-protection-concept-260nw-2125197293.webp);">
+            <div class=" w-[1550px]">
+                <h1 class="text-center text-6xl font-extrabold mb-10">Let's get some Mooney!!</h1>
+            <!-- 3cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 mx-52 gap-5">
+                <!-- card 1 -->
+            <div class="card bg-emerald-600 shadow-xl p-10  rounded-xl">
+                <div class="card-body">
+                  <h2 class="text-2xl font-semibold text-white">Deposit</h2>
+                  <p class="text-2xl font-semibold text-white">$<span id="deposit-display"> 00</span></p>
+                </div>
+            </div>
+                <!-- card 2 -->
+            <div class="card bg-pink-400 shadow-xl p-10  rounded-xl">
+                <div class="card-body">
+                  <h2 class="text-2xl font-semibold text-white">Withdraw</h2>
+                  <p class="text-2xl font-semibold text-white">$<span  id="withdraw-display">00</span></p>
+                </div>
+            </div>
+                <!-- card 3 -->
+            <div class="card bg-red-400 shadow-xl p-10  rounded-xl">
+                <div class="card-body">
+                  <h2 class="text-2xl font-semibold text-white">Balance</h2>
+                  <p class="text-2xl font-semibold text-white">$<span id="balance-display"  >100000</span></p>
+                </div>
+            </div>
+                
+            </div>
+
+
+            <div class="my-14 grid grid-cols-1 lg:grid-cols-2 mx-52 gap-5">
+                <div class="px-10 py-14 bg-blue-400 space-y-4 rounded-lg">
+                    <h2 class="text-left text-2xl font-semibold text-white">Please Deposit</h2>
+                    <div class="flex justify-center">
+                        <div class=" space-y-4">
+                            <input id="deposit-feild" type="text" placeholder="$ amount you want to deposit" class="rounded w-96 p-2" />
+                            <div class="card-actions justify-end">
+                                <button id="deposit-btn" class=" hover:bg-violet-600 bg-blue-900 py-2 px-10 rounded-lg text-white text-base font-medium">Deposit</button>
+                            </div>
+                          </div>
+                    </div>
+                    
+                  </div>
+                  <div class="px-10 py-14 bg-blue-400 space-y-4 rounded-lg">
+                    <h2 class="text-left text-2xl font-semibold text-white">Please Withdraw</h2>
+                    <div class="flex justify-center">
+                        <div class=" space-y-4">
+                            <input id="withdraw-feild" type="text" placeholder="$ amount you want to withdraw" class="rounded w-96 p-2" />
+                            <div class="card-actions justify-end">
+                                <button id="withdraw-btn" class=" hover:bg-violet-600 bg-blue-900 py-2 px-10 rounded-lg text-white text-base font-medium">Withdraw</button>
+                            </div>
+                          </div>
+                    </div>
+                    
+                  </div>
+            </div>
+            </div>
+            
+        </div>
+        
+    </section>
+    <script src="deposit.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+</html>
